@@ -20,3 +20,17 @@ madre(selma, ling).
 
 casado(homero, marge).
 casado(marge, homero).
+
+%REGLAS
+hijo (X, Y) :- padre(Y, X);
+	madre(Y, X).
+
+hermano(X, Y) :- hijo(X, Z), hijo(Y, Z), X\=Y.
+
+abuelo(X,Y) :- padre(X,Z), padre(Z,Y);
+	        padre(X,Z), madre(Z,Y);
+	        madre(X,Z), madre(Z, Y);
+	        madre(X,Z), padre(Z,Y).
+	        
+	        
+

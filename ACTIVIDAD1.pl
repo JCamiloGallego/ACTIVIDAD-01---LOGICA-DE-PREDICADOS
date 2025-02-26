@@ -8,3 +8,13 @@ padre(clancy, selma).
 padre(homero, bart).
 padre(homero, lisa).
 padre(homero, maggie).
+
+madre(mona, homero).
+madre(jacqueline, marge).
+madre(jacqueline, patty).
+madre(jacqueline, selma).
+madre(marge, bart).
+madre(marge, lisa).
+madre(marge, maggie).
+madre(selma, ling).
+

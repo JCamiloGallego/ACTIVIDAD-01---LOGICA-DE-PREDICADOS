@@ -32,5 +32,11 @@ abuelo(X,Y) :- padre(X,Z), padre(Z,Y);
 	        madre(X,Z), madre(Z, Y);
 	        madre(X,Z), padre(Z,Y).
 	        
+tio(X, Y) :- hermano(X, Z), padre(Z, Y);
+    		 hermano(X, Z), madre(Z, Y).
+
+primo(X, Y) :- tio(Z, X), hijo(Y, Z).
+
+cuñado(X, Y) :- casado(Y, Z), hermano(X, Z).
 	        
 

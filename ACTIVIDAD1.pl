@@ -18,3 +18,5 @@ madre(marge, lisa).
 madre(marge, maggie).
 madre(selma, ling).
 
+casado(homero, marge).
+casado(marge, homero).
